@@ -29,7 +29,7 @@ export default function PopupContent (props) {
       evt.preventDefault()
       const newText = getCommentText()
       const date = new Date()
-      const newComment = {text: newText, date: `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`}
+      const newComment = {text: newText, date: `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`}
   
       setComments([...comments, newComment])
       input.current.value = ''
