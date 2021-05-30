@@ -267,6 +267,27 @@
   }
 }
 
+/* стили кнопок на разрешении меньше 768px временные, пока нет функции свайпа*/
+
+@media screen and (max-width: 768px) {
+  .popup__prev {
+    top: 2%;
+    left: 50%;
+    background-size: 40px 35px;
+    width: 40px;
+    height: 35px;
+  }
+
+  .popup__next {
+    top: 92%;
+    left: 50%;
+    background-size: 40px 35px;
+    width: 40px;
+    height: 35px;
+  }
+}
+
+
 @media screen and (max-width: 600px) {
   .popup__container {
     width: 100%;
