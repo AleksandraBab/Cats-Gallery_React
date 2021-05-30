@@ -1,12 +1,12 @@
 import React from 'react'
 
 export default function Card (props) {
-  const {card, onCardClick} = props
+  const {card, ind, onCardClick} = props
 
   return (
     <li
       className="item"
-      onClick={() => onCardClick(card)}
+      onClick={() => onCardClick(card, ind)}
     >
       <img className="item__img"
         src={card.link}

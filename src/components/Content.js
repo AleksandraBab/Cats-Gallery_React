@@ -10,10 +10,11 @@ export default function Content ({onCardClick}) {
       <section className="gallery content__section">
         <h1 className="gallery__heading">Усы, лапы, хвост</h1>
         <ul className="gallery__list">
-          {cardList.map((item) => (
+          {cardList.map((item, ind) => (
             <Card
               key={item.id}
               card={item}
+              ind={ind}
               onCardClick={onCardClick}
             />
           ))}
